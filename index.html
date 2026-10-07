@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Start — empty starter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/rides.css">
+</head>
+<body>
+  <main class="garage">
+    <header class="garage-head">
+      <p class="kicker">PF 101 · empty starter</p>
+      <h1>Ride Start</h1>
+      <p class="lead"><code>js/</code> is empty on purpose. Type every class. Same methods — different rides.</p>
+    </header>
+
+    <section class="board" aria-label="Pick a ride, start it, or sakay passengers">
+      <ul id="ride-list" class="ride-list"></ul>
+
+      <div class="controls">
+        <button type="button" id="start-btn" class="start-btn" disabled>Start</button>
+        <p id="hint" class="hint">Type the classes first. Then pick a ride.</p>
+      </div>
+
+      <div class="sakay-row">
+        <label class="sakay-label" for="pax">Passengers</label>
+        <input id="pax" class="pax-input" type="number" min="1" step="1" value="1" disabled>
+        <button type="button" id="sakay-btn" class="sakay-btn" disabled>Sakay</button>
+      </div>
+
+      <p id="shout" class="shout" aria-live="polite">—</p>
+      <p id="formula" class="formula"></p>
+    </section>
+
+    <aside class="lesson">
+      <p><strong>Garage</strong> only calls <code>start()</code> and <code>sakay(n)</code>. No <code>instanceof</code>. Habal-habal max = 3.</p>
+    </aside>
+  </main>
+
+  <!-- Create these files in order. Scripts 404 until you type them — that is expected. -->
+  <script src="js/ride.js"></script>
+  <script src="js/jeepney.js"></script>
+  <script src="js/tricycle.js"></script>
+  <script src="js/motorcycle.js"></script>
+  <script src="js/garage.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
